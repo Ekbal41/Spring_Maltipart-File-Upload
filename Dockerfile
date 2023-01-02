@@ -11,6 +11,9 @@
 
     
     COPY --from=build /target/fileupload-0.0.1-SNAPSHOT.jar fileupload.jar
+    VOLUME /uploads
+    
+
 
     # ENV PORT=8080
     EXPOSE 8080
